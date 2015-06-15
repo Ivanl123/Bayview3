@@ -44,7 +44,7 @@
                         </value>
                         <next>
                           <block type="variables_set" id="196" inline="true">
-                            <field name="VAR">item</field>
+                            <field name="VAR">i</field>
                             <value name="VALUE">
                               <block type="math_arithmetic" id="214" inline="true">
                                 <field name="OP">ADD</field>
