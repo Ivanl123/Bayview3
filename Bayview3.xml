@@ -9,6 +9,21 @@
     <next>
       <block type="controls_whileUntil" id="27" inline="false">
         <field name="MODE">WHILE</field>
+        <value name="NUMBER">
+          <block type="logic_compare" id="284" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="variables_get" id="294">
+                <field name="VAR">i</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="307">
+                <field name="NUM">4</field>
+              </block>
+            </value>
+          </block>
+        </value>
         <statement name="DO">
           <block type="movement_forward" id="38">
             <next>
