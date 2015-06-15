@@ -1,1 +1,64 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="variables_set" id="11" inline="true" x="153" y="89">
+    <field name="VAR">i</field>
+    <value name="VALUE">
+      <block type="math_number" id="80">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <next>
+      <block type="controls_whileUntil" id="27" inline="false">
+        <field name="MODE">WHILE</field>
+        <statement name="DO">
+          <block type="movement_forward" id="38">
+            <next>
+              <block type="robot_delay" id="40" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="47">
+                    <field name="NUM">1000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_right" id="57">
+                    <next>
+                      <block type="robot_delay" id="114" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="155">
+                            <field name="NUM">1000</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="196" inline="true">
+                            <field name="VAR">item</field>
+                            <value name="VALUE">
+                              <block type="math_arithmetic" id="214" inline="true">
+                                <field name="OP">ADD</field>
+                                <value name="A">
+                                  <block type="variables_get" id="218">
+                                    <field name="VAR">i</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="225">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="movement_stop" id="235"></block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
